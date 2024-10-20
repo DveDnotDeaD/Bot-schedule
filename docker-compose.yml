@@ -4,5 +4,5 @@ services:
     build: .
     container_name: bot
     volumes:
-      - './1.xlsx:/usr/src/app/1.xlsx'
+      - './schedule.xlsx:/usr/src/app/schedule.xlsx'
       - './.env:/usr/src/app/.env'

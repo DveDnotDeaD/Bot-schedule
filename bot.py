@@ -23,7 +23,7 @@ class User:
         self.last_message_time = 0
 
 
-wb = load_workbook('./1.xlsx')
+wb = load_workbook('./schedule.xlsx')
 
 sheet = wb.active
 
