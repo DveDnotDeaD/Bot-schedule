@@ -5,8 +5,13 @@ import telebot
 from telebot import types
 import time
 import random
+import os
+from dotenv import load_dotenv, find_dotenv
 
-bot = telebot.TeleBot('xxx')  # Необходимо ввести токен для бота
+load_dotenv(find_dotenv())
+
+# Необходимо ввести токен для бота
+bot = telebot.TeleBot(os.getenv('TOKEN_TG'))
 
 user_dict = {}
 
